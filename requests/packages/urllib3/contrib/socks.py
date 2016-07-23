@@ -77,6 +77,7 @@ class SOCKSConnection(HTTPConnection):
                 proxy_port=self._socks_options['proxy_port'],
                 proxy_username=self._socks_options['username'],
                 proxy_password=self._socks_options['password'],
+                proxy_rdns=False,
                 timeout=self.timeout,
                 **extra_kw
             )
